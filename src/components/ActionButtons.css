@@ -1,0 +1,26 @@
+div.action-buttons {
+  grid-area: action;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+
+  > button {
+    background: transparent;
+    border: 1px solid var(--clr-gray);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  > button:nth-child(2) {
+    background-color: var(--clr-accent);
+    color: var(--clr-white);
+    border: none;
+  }
+}

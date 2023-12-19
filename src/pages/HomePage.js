@@ -1,3 +1,4 @@
+import ActionButtons from "../components/ActionButtons";
 import Card from "../components/Card";
 import DashBoardNav from "../components/DashBoardNav";
 import LeftNav from "../components/LeftNav";
@@ -74,6 +75,7 @@ const HomePage = () => {
           <Card />
         </div>
       </main>
+      <ActionButtons />
     </div>
   );
 };

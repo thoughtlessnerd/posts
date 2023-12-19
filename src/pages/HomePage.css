@@ -3,16 +3,16 @@ div.homepage {
   height: 100%;
   min-height: 100vh;
   display: grid;
-  grid-template-areas: "dash dash" "leftNav main";
+  grid-template-areas: "dash dash dash" "leftNav main action";
   grid-template-rows: 1fr 20fr;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 5fr 20fr 2fr;
   position: relative;
   background-color: var(--clr-blk);
   /* gap: 0.2rem; */
 
   > main {
     grid-area: main;
-    padding: 1rem 7rem 1rem 2rem;
+    padding: 1rem 2rem;
 
     > header {
       display: flex;

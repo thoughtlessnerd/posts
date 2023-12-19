@@ -4,7 +4,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 3rem;
-  padding: 0rem 7rem;
+  padding: 0rem 11rem;
   border-bottom: 1px solid var(--clr-gray);
   grid-area: dash;
 
