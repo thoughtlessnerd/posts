@@ -1,0 +1,36 @@
+.dashboard-nav {
+  display: flex;
+  background-color: var(--clr-blk);
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem 5rem;
+
+  > ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+
+    > li {
+      > a {
+        color: var(--clr-white);
+        font-weight: var(--rg);
+        text-decoration: none;
+      }
+
+      > a:hover {
+        color: var(--clr-accent);
+      }
+    }
+  }
+
+  > button {
+    background-color: transparent;
+    color: var(--clr-red);
+    border: solid 1px var(--clr-red);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: var(--rg);
+    cursor: pointer;
+  }
+}
