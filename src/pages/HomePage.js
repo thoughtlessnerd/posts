@@ -1,3 +1,4 @@
+import Card from "../components/Card";
 import DashBoardNav from "../components/DashBoardNav";
 import LeftNav from "../components/LeftNav";
 import "./HomePage.css";
@@ -65,7 +66,9 @@ const HomePage = () => {
             </button>
           </div>
         </header>
-        <div className="posts">{/* <Card /> */}</div>
+        <div className="posts">
+          <Card />
+        </div>
       </main>
     </div>
   );

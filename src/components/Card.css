@@ -1,0 +1,105 @@
+div.card {
+  border: 1px solid var(--clr-gray);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+
+  > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid var(--clr-gray);
+
+    > span.profile-pic {
+      height: 3rem;
+      width: 3rem;
+
+      > img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    div.actions {
+      display: flex;
+      gap: 1rem;
+      color: var(--clr-white);
+      align-items: center;
+
+      > p {
+        font-weight: var(--rg);
+      }
+
+      > button {
+        background: transparent;
+        border: 1px solid var(--clr-lt-gray);
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+
+  > div.content {
+    padding: 1rem;
+    font-size: 0.9rem;
+
+    > p {
+      color: var(--clr-white);
+      font-weight: var(--rg);
+    }
+
+    > h3 {
+      color: var(--clr-accent);
+      font-weight: var(--rg);
+      font-size: 1em;
+      padding: 1rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  > div.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    > button.like {
+      background: transparent;
+      border: none;
+      color: var(--clr-lt-gray);
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    > div.right {
+      display: flex;
+      gap: 1rem;
+
+      > button {
+        background: transparent;
+        border: 1px solid var(--clr-lt-gray);
+        color: var(--clr-accent);
+        padding: 0.5rem 0.8rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
