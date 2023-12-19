@@ -12,5 +12,54 @@ div.homepage {
 
   > main {
     grid-area: main;
+    padding: 1rem 2rem;
+
+    > header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      > div.content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        > h1 {
+          color: var(--clr-white);
+
+          > button {
+            background: transparent;
+            color: var(--clr-white);
+            border: none;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+          }
+        }
+
+        > p {
+          color: var(--clr-lt-gray);
+          font-weight: var(--rg);
+        }
+      }
+
+      > div.actions {
+        display: flex;
+        gap: 2rem;
+
+        > button {
+          background: transparent;
+          color: var(--clr-accent);
+          border: 1px solid var(--clr-accent);
+          padding: 1rem;
+          border-radius: 0.5rem;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+        }
+      }
+    }
   }
 }
