@@ -1,4 +1,5 @@
 div.card {
+  background-color: var(--clr-lt-blk);
   border: 1px solid var(--clr-gray);
   border-radius: 0.5rem;
   display: flex;

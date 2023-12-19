@@ -68,6 +68,10 @@ const HomePage = () => {
         </header>
         <div className="posts">
           <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
       </main>
     </div>
