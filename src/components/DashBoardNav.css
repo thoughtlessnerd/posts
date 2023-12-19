@@ -5,6 +5,8 @@
   align-items: center;
   gap: 3rem;
   padding: 1rem 5rem;
+  border-bottom: 1px solid var(--clr-gray);
+  grid-area: dash;
 
   > ul {
     display: flex;

@@ -1,13 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;500;700;900&display=swap");
 
 :root {
   /* colors */
   --clr-blk: #141414;
   --clr-lt-blk: #181818;
   --clr-gray: #1f1f1f;
+  --clr-lt-gray: #636363;
   --clr-accent: #1b81b8;
+  --clr-lt-accent: #40a7d3;
   --clr-white: #fff;
   --clr-red: #ec4343;
+  --clr-lt-blu: #232b2f;
 
   /* font weights */
   --lt: 100;
@@ -16,11 +19,20 @@
   --bd: 700;
   --xbd: 900;
 
-  font-family: "Poppins", sans-serif;
+  font-family: "Lexend", sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+button {
+  font-family: "Lexend", sans-serif;
 }

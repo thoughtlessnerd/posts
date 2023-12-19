@@ -9,9 +9,6 @@ function App() {
   return (
     <Router>
       <div>
-        {/* Navigation */}
-        <LeftNav />
-
         {/* Routes */}
         <Routes>
           <Route path="/signup">{/* <SignupPage /> */}</Route>

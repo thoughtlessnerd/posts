@@ -1,10 +1,13 @@
 import DashBoardNav from "../components/DashBoardNav";
+import LeftNav from "../components/LeftNav";
+import "./HomePage.css";
 
 const HomePage = () => {
   return (
-    <div>
+    <div class="homepage">
       <DashBoardNav />
-      <h1>Welcome to the HomePage</h1>
+      <LeftNav />
+      <main></main>
     </div>
   );
 };
