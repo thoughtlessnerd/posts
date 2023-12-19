@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
-import LeftNav from "./components/LeftNav";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <div>
         {/* Routes */}
         <Routes>
-          <Route path="/signup">{/* <SignupPage /> */}</Route>
+          <Route path="/signup" element={<SignUp />}></Route>
           <Route path="/settings">{/* <SettingsPage /> */}</Route>
           <Route path="/" element={<HomePage />} />
         </Routes>
