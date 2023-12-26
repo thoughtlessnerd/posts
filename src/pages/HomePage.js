@@ -2,9 +2,13 @@ import ActionButtons from "../components/ActionButtons";
 import Card from "../components/Card";
 import DashBoardNav from "../components/DashBoardNav";
 import LeftNav from "../components/LeftNav";
+import RightSlider from "../components/RightSlider";
+import { useState } from "react";
 import "./HomePage.css";
 
 const HomePage = () => {
+  const [visibleRightSlider, setVisibleRightSlider] = useState(true);
+
   return (
     <div class="homepage">
       <DashBoardNav />
@@ -71,10 +75,12 @@ const HomePage = () => {
           <Card />
           <Card />
           <Card />
-          <Card />
-          <Card />
         </div>
       </main>
+      <RightSlider
+        visible={visibleRightSlider}
+        setVisible={setVisibleRightSlider}
+      />
       <ActionButtons />
     </div>
   );

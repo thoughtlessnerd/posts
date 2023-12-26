@@ -1,0 +1,55 @@
+main {
+  > div.repurpose {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    > div.select {
+      width: 100%;
+      display: flex;
+      background-color: var(--clr-gray);
+      align-items: center;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+
+      > select {
+        background-color: var(--clr-lt-blk);
+        padding: 1rem;
+        border: none;
+        color: var(--clr-accent);
+        font-weight: var(--bd);
+        font-size: 0.8rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+
+    > button {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 0.5rem;
+      padding: 1rem 0;
+      border: none;
+      background-color: var(--clr-accent);
+      font-weight: var(--bd);
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      gap: 0.5rem;
+      color: var(--clr-white);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 0.5rem var(--clr-accent);
+      }
+
+      path {
+        stroke: var(--clr-white);
+      }
+    }
+  }
+}
