@@ -8,11 +8,18 @@ import Topics from "./pages/Topics";
 import Queue from "./pages/Queue";
 import PostGen from "./pages/PostGen";
 import Repurpose from "./pages/Repurpose";
+import SignUpSuccess from "./pages/SignupSuccess";
+import DashBoardNav from "./components/DashBoardNav";
+import LeftNav from "./components/LeftNav";
+import RightSlider from "./components/RightSlider";
+import ActionButtons from "./components/ActionButtons";
 
 function App() {
   return (
     <Router>
-      <div>
+      <div className="homepage">
+        <DashBoardNav />
+        <LeftNav />
         {/* Routes */}
         <Routes>
           <Route path="/signup" element={<SignUp />} />
@@ -20,8 +27,11 @@ function App() {
           <Route path="/queue" element={<Queue />} />
           <Route path="/postGen" element={<PostGen />} />
           <Route path="/repurpose" element={<Repurpose />} />
+          <Route path="/linkedin" element={<SignUpSuccess />} />
           <Route path="/" element={<HomePage />} />
         </Routes>
+        <RightSlider />
+        <ActionButtons />
       </div>
     </Router>
   );

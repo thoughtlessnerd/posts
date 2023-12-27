@@ -15,3 +15,11 @@ div.homepage {
     padding: 1rem 2rem;
   }
 }
+
+div.notMain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: var(--clr-blk);
+}

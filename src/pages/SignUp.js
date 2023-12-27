@@ -1,8 +1,10 @@
 import "./SignUp.css";
 
 const SignUp = () => {
+  const url = `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77g2qs1vzdvggt&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Flinkedin&state=asdac123asbwAS1212&scope=email%20w_member_social%20profile%20openid`;
+
   return (
-    <div className="signup">
+    <div className="signup notMain">
       <main>
         <div>
           <h1>Add Your Linkedin Account</h1>
@@ -10,7 +12,12 @@ const SignUp = () => {
         </div>
 
         <center>
-          <button className="linkedin">
+          <button
+            className="linkedin"
+            onClick={() => {
+              window.location.href = url;
+            }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
