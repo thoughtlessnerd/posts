@@ -2,7 +2,7 @@ import "./Topics.css";
 
 const Topics = () => {
   return (
-    <div className="topics">
+    <div className="topics notMain">
       <main>
         <header>
           <h1>Define Your Topics</h1>
@@ -13,6 +13,9 @@ const Topics = () => {
           <select></select>
           <div className="suggestions">
             <Suggestion content="StartUp" />
+            <Suggestion content="StarasdasdsatUp" />
+            <Suggestion content="StaasdasrtUp" />
+            <Suggestion content="StaasdasrtUp" />
             <Suggestion content="Marketing" />
             <Suggestion content="Audience building" />
             <Suggestion content="Seo" />

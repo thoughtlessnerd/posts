@@ -1,5 +1,4 @@
 import Card from "../components/Card";
-import { useState } from "react";
 import "./HomePage.css";
 
 const HomePage = () => {
