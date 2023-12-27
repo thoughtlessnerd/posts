@@ -13,6 +13,7 @@ import DashBoardNav from "./components/DashBoardNav";
 import LeftNav from "./components/LeftNav";
 import RightSlider from "./components/RightSlider";
 import ActionButtons from "./components/ActionButtons";
+import Account from "./pages/Account";
 
 function App() {
   const [rightSliderVisible, setRightSliderVisible] = React.useState(false);
@@ -30,6 +31,7 @@ function App() {
           <Route path="/postGen" element={<PostGen />} />
           <Route path="/repurpose" element={<Repurpose />} />
           <Route path="/linkedin" element={<SignUpSuccess />} />
+          <Route path="/account" element={<Account />} />
           <Route path="/" element={<HomePage />} />
         </Routes>
         <RightSlider
