@@ -1,6 +1,6 @@
 import "./ActionButtons.css";
 
-const ActionButtons = () => {
+const ActionButtons = ({ setRightSliderVisible }) => {
   return (
     <div className="action-buttons">
       <button className="zap">
@@ -20,7 +20,7 @@ const ActionButtons = () => {
           />
         </svg>
       </button>
-      <button className="create">
+      <button className="create" onClick={() => setRightSliderVisible(true)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"

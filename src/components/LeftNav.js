@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import "./leftNav.css";
 
-const LeftNav = () => {
+const LeftNav = ({ setRightSliderVisible }) => {
   return (
     <nav className="leftNav">
       <ul>
         <li>
-          <button>
+          <button onClick={() => setRightSliderVisible(true)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

@@ -1,0 +1,17 @@
+div.success {
+  background: linear-gradient(to top right, var(--clr-blk), var(--clr-lt-blu));
+
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 10rem;
+  gap: 1rem;
+  color: var(--clr-white);
+
+  > h1 {
+    font-weight: var(--rg);
+  }
+
+  > p {
+    font-weight: var(--lt);
+  }
+}

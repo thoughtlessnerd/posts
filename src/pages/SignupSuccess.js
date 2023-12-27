@@ -13,8 +13,10 @@ const SignUpSuccess = () => {
   }, []);
 
   return (
-    <div className="notMain">
-      <h1>Sign Up Success</h1>
+    <div className="notMain success">
+      <h1>Extra authorization successfuly saved.</h1>
+
+      <p>You will be redirected shortly.</p>
     </div>
   );
 };

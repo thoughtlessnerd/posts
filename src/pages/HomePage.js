@@ -3,8 +3,6 @@ import { useState } from "react";
 import "./HomePage.css";
 
 const HomePage = () => {
-  const [visibleRightSlider, setVisibleRightSlider] = useState(true);
-
   return (
     <main>
       <header>

@@ -15,11 +15,13 @@ import RightSlider from "./components/RightSlider";
 import ActionButtons from "./components/ActionButtons";
 
 function App() {
+  const [rightSliderVisible, setRightSliderVisible] = React.useState(false);
+
   return (
     <Router>
       <div className="homepage">
         <DashBoardNav />
-        <LeftNav />
+        <LeftNav setRightSliderVisible={setRightSliderVisible} />
         {/* Routes */}
         <Routes>
           <Route path="/signup" element={<SignUp />} />
@@ -30,8 +32,11 @@ function App() {
           <Route path="/linkedin" element={<SignUpSuccess />} />
           <Route path="/" element={<HomePage />} />
         </Routes>
-        <RightSlider />
-        <ActionButtons />
+        <RightSlider
+          visible={rightSliderVisible}
+          setVisible={setRightSliderVisible}
+        />
+        <ActionButtons setRightSliderVisible={setRightSliderVisible} />
       </div>
     </Router>
   );
