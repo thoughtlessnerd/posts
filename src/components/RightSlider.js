@@ -1,6 +1,9 @@
+import { useState } from "react";
 import "./RightSlider.css";
 
 const RightSlider = ({ visible, setVisible }) => {
+  const [content, setContent] = useState("");
+  console.log(content);
   return (
     <div className={visible ? "right-slider" : "right-slider hidden"}>
       <div className="action-btns">
@@ -55,13 +58,20 @@ const RightSlider = ({ visible, setVisible }) => {
             </li>
           </ul>
         </nav>
-        <Compose />
+        <Compose content={content} setContent={setContent} />
+      </div>
+      <div className={content ? "post-preview active" : "post-preview"}>
+        <p className="content">{content}</p>
+        <img
+          src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg"
+          alt=""
+        />
       </div>
     </div>
   );
 };
 
-const Compose = () => {
+const Compose = ({ content, setContent }) => {
   return (
     <div className="compose">
       <header>
@@ -83,7 +93,9 @@ const Compose = () => {
         </button>
       </header>
       <main>
-        <textarea>Write here...</textarea>
+        <textarea onChange={(e) => setContent(e.target.value)}>
+          {content + "asdasd"}
+        </textarea>
         <div className="actions">
           <span>Saved</span>
           <div className="btns">

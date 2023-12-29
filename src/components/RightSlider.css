@@ -13,6 +13,33 @@ div.right-slider {
     right: -400px;
   }
 
+  div.post-preview {
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    background-color: var(--clr-blk);
+    width: 100%;
+    padding: 2rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+    color: var(--clr-white);
+
+    &.active {
+      right: 100%;
+      opacity: 1;
+    }
+
+    > img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
   > div.action-btns {
     display: flex;
     justify-content: flex-start;
