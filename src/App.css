@@ -23,3 +23,79 @@ div.notMain {
   z-index: 100;
   background-color: var(--clr-blk);
 }
+
+button.red {
+  background-color: var(--clr-red);
+  color: var(--clr-white);
+  border: none;
+}
+
+button.red-outline {
+  background-color: transparent;
+  color: var(--clr-red);
+  border: 1px solid var(--clr-red);
+}
+
+button.accent {
+  background-color: var(--clr-accent);
+  color: var(--clr-white);
+  border: none;
+}
+
+button.accent-outline {
+  background-color: transparent;
+  color: var(--clr-accent);
+  border: 1px solid var(--clr-accent);
+}
+
+input[type="range"] {
+  /* background-color: var(--clr-accent); */
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 0.2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  --min: 0;
+  --max: 100;
+  --val: 0;
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--val) - var(--min)) / var(--range));
+  --sx: calc(1.5 * 0.2em + var(--ratio) * (100% - 0.2em));
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--clr-white);
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(0%, -40%);
+  }
+
+  &::-webkit-slider-runnable-track {
+    height: 0.2rem;
+    cursor: pointer;
+    background: linear-gradient(
+      to right,
+      var(--clr-accent) 0 var(--sx),
+      var(--clr-lt-gray) var(--sx) 100%
+    );
+    border-radius: 0.5rem;
+  }
+
+  &::-moz-range-track {
+    height: 0.2rem;
+    cursor: pointer;
+    /* background-color: var(--clr-white); */
+    border-radius: 0.5rem;
+  }
+
+  &::-moz-range-progress {
+    background-color: var(
+      --clr-accent
+    ); /* Set the color of the already traveled track for Firefox */
+    border-radius: 0.5rem;
+  }
+}

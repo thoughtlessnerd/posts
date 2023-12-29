@@ -9,10 +9,10 @@ const Repurpose = () => {
 
       <div className="repurpose">
         <div className="select">
-          <select>
-            <option value="post1">Sakcham Singh</option>
-            <option value="post2">Post 2</option>
-            <option value="post3">Post 3</option>
+          <select disabled>
+            <option value="post">Linkedin Posts</option>
+            {/* <option value="post2">Post 2</option>
+            <option value="post3">Post 3</option> */}
           </select>
         </div>
         <button className="btn">
